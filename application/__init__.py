@@ -6,7 +6,7 @@ from . import views
 
 def create_app():
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = "put any long random string here"
+    app.config["SECRET_KEY"] = "algorandisgreatyeaheveryoneknowsthat"
 
     auth.login_manager.init_app(app)
 

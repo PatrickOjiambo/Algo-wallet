@@ -7,7 +7,7 @@ def myindexer():
 
     algod_address = "https://testnet-algorand.api.purestake.io/idx2"
     # FIXME: Put your API key in
-    algod_token = "YOUR API KEY GOES HERE"
+    algod_token = "EUkd3JR2JXG9FqVeU34Z4CZKDL3y0C69bj7Jq2Zb"
 
     headers = {
         "X-API-Key": algod_token,
