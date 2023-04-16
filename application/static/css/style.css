@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: helvetica;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
 }
 
@@ -13,18 +13,18 @@ body {
     padding: 15px;
     margin: 40px;
     border-radius: 24px;
-    background-color: whitesmoke;
+    background-color: rgb(110, 106, 106);
     width: 60%;
     position: absolute;
     padding-bottom: 48px;
 }
 
 input {
-    width: 280px;
+    width: 250px;
     padding: 12px;
     margin-bottom: 12px;
     border-radius: 6px;
-    border: 2px solid grey;
+    border: 2px solid rgb(46, 44, 44);
     box-sizing: content-box;
 }
 
@@ -40,14 +40,15 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: darkslategrey;
-    color: white;
+    color: rgb(27, 26, 26);
     cursor: pointer;
 }
 
 table {
-    text-align: left;
+    text-align: right;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 th, td {

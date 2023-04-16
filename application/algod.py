@@ -1,7 +1,8 @@
-from algosdk import account, mnemonic
-from algosdk.constants import microalgos_to_algos_ratio
-from algosdk.future.transaction import PaymentTxn, AssetConfigTxn
+
+from algosdk import transaction
 from algosdk.v2client import algod
+from algosdk.constants import microalgos_to_algos_ratio
+from algosdk import account, mnemonic
 
 
 def algod_client():
@@ -105,7 +106,7 @@ def create_asset(
     """Creates an asset, returns the newly created asset ID"""
     params = algod_client().suggested_params()
 
-    txn = AssetConfigTxn(
+    txn = transaction.AssetCreateTxn(
         sender=creator,
         sp=params,
         total=total,

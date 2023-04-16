@@ -1,4 +1,4 @@
-from algosdk import mnemonic
+from algosdk import mnemonic, account
 from flask_login import UserMixin
 
 from .algod import get_balance, send_txn, create_asset
@@ -20,7 +20,7 @@ class User(UserMixin):
     @property
     def public_key(self):
         """Returns public key from mnemonic. This is the same as the user's address"""
-        return mnemonic.to_public_key(self.passphrase)
+        return account.address_from_private_key(User.get_id(self))
 
     def get_balance(self):
         """Returns user balance, in algos"""

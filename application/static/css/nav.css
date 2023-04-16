@@ -1,12 +1,12 @@
 .topnav {
-    background-color: whitesmoke;
+    background-color: rgb(124, 119, 119);
     padding: 20px;
     text-align: center;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: black;
+    color: rgb(73, 37, 37);
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -28,6 +28,6 @@
 }
 
 .topnav a.logout {
-    background-color: lightcoral;
+    background-color: rgb(49, 156, 28);
     color: white;
 }
